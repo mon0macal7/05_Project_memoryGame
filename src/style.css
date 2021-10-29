@@ -5,14 +5,15 @@ body {
   grid-template-columns: 0.5fr 4fr 0.5fr;
   grid-template-rows: 0.7fr 4fr 0.5fr;
   grid-template-areas: "header header header" "aside1 main aside2" "footer footer footer";
-  background-color: rgb(163, 88, 233);
+  background-color: #51355a;
   column-gap: 1.5%;
   row-gap: 0.3%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
   grid-area: header;
-  background-color: rgb(74, 13, 49);
+  background-color: #c3acce;
   text-align: center;
 }
 
@@ -23,7 +24,7 @@ aside1 {
 
 main {
   grid-area: main;
-  background-color: darkcyan;
+  background-color: #e2eb98;
   display: flex;
   flex-wrap: wrap;
   gap: 1em 1em;
