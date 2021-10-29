@@ -1,0 +1,41 @@
+body {
+  display: grid;
+  width: auto;
+  height: 100vh;
+  grid-template-columns: 0.5fr 4fr 0.5fr;
+  grid-template-rows: 0.7fr 4fr 0.5fr;
+  grid-template-areas: "header header header" "aside1 main aside2" "footer footer footer";
+  background-color: rgb(163, 88, 233);
+  column-gap: 1.5%;
+  row-gap: 0.3%;
+}
+
+header {
+  grid-area: header;
+  background-color: rgb(74, 13, 49);
+  text-align: center;
+}
+
+aside1 {
+  grid-area: aside1;
+  background-color: rgb(72, 72, 128);
+}
+
+main {
+  grid-area: main;
+  background-color: darkcyan;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em 1em;
+  color: deeppink;
+}
+
+aside2 {
+  grid-area: aside2;
+  background-color: rgb(46, 46, 139);
+}
+
+footer {
+  grid-area: footer;
+  background-color: darkgoldenrod;
+}
