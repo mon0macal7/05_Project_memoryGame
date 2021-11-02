@@ -28,4 +28,4 @@ let iterarCards = (data) => {
   }
 };
 
-import { searchCard } from "./data.js";
+import {} from "./data.js";

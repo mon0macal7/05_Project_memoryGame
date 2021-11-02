@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Yusei+Magic&display=swap");
+
 body {
   display: grid;
   width: auto;
@@ -8,7 +10,7 @@ body {
   background-color: #51355a;
   column-gap: 1.5%;
   row-gap: 0.3%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Yusei Magic", sans-serif;
 }
 
 header {
@@ -44,4 +46,6 @@ footer {
 #memoCard {
   background-color: blueviolet;
   background-image: url(https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  opacity: 0.4;
 }
