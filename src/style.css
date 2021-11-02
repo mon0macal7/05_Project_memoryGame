@@ -40,3 +40,8 @@ footer {
   grid-area: footer;
   background-color: darkgoldenrod;
 }
+
+#memoCard {
+  background-color: blueviolet;
+  background-image: url(https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
