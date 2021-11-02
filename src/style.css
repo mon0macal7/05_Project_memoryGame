@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Yusei+Magic&display=swap");
+
 body {
   display: grid;
   width: auto;
@@ -5,10 +7,10 @@ body {
   grid-template-columns: 0.5fr 4fr 0.5fr;
   grid-template-rows: 0.7fr 4fr 0.5fr;
   grid-template-areas: "header header header" "aside1 main aside2" "footer footer footer";
-  background-color: #51355a;
+  background-color: #8c6399;
   column-gap: 1.5%;
   row-gap: 0.3%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Yusei Magic", sans-serif;
 }
 
 header {
@@ -28,7 +30,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1em 1em;
-  color: deeppink;
+  color: rgb(46, 4, 26);
 }
 
 aside2 {
@@ -44,4 +46,59 @@ footer {
 #memoCard {
   background-color: blueviolet;
   background-image: url(https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  opacity: 0.4;
+}
+
+/*  Memo transitions*/
+
+.card-container {
+  display: block;
+  margin: auto;
+  width: 15em;
+  height: 10em;
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.card-portrait {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card-cover,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.card-cover {
+  background-image: url(/assets/paintings/reverseCard.png);
+  background-size: cover;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  transform: rotateX(180deg);
+}
+footer {
+  font-size: 15px;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
