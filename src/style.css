@@ -30,7 +30,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1em 1em;
-  color: deeppink;
+  color: rgb(46, 4, 26);
 }
 
 aside2 {
@@ -80,8 +80,8 @@ footer {
 
 .card-cover {
   background-image: url(/assets/paintings/reverseCard.png);
+  background-size: cover;
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 7px;
