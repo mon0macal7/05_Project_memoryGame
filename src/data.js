@@ -1,7 +1,9 @@
 //Exportar función para insertar imagen
-export let getPaintCards = () => {};
+export let getPaintCards = () => {
+  getPaintCards;
+};
 //traer data del .json local
-fetch("./assets/data/memory.json")
+fetch(".vscode/data/memory.json")
   .then((response) => response.json())
   .then((data) => iterarCards.json(data))
   .catch((error) => console.log(error));
