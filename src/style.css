@@ -68,10 +68,6 @@ footer {
   transform-style: preserve-3d;
 }
 
-.card-portrait:hover {
-  transform: rotateX(180deg);
-}
-
 .card-cover,
 .card-back {
   position: absolute;
@@ -82,7 +78,7 @@ footer {
 }
 
 .card-cover {
-  background-image: url(/assets/paintings/reverseCard.png);
+  background-image: url(/assets/paintings/riverse.png);
   background-size: cover;
   width: 100%;
   border-radius: 7px;

@@ -27,8 +27,8 @@
     <nav></nav>
     <!-- aquí estará el nombre del user 1 y su puntuación -->
     <aside1>
-      <p>Jugador 1</p>
-
+      <p id="colorA">Jugador 1</p>
+      <p id= "scoreP1">0</p>
       <form class="form-floating">
           <input type="user" class="form-control" id="floatingInputValue" placeholder="Introduce tu nombre" value="userName">
           <label for="floatingInputValue">userName</label>
@@ -41,12 +41,15 @@
 
      <!-- aquí estará el nombre del user 2 y su puntuación -->
     <aside2>
-      <p>Jugador 2</p>
+      <p id="colorB">Jugador 2</p>
+      <p id= "scoreP2">0</p>
        <form class="form-floating">
           <input type="user" class="form-control" id="floatingInputValue" placeholder="Introduce tu nombre" value="userName">
           <label for="floatingInputValue">userName</label>
       </form>
     </aside2>
+
+    
 <!-- Inicia footer -->
     <footer>
       <span id="Contact">
@@ -64,9 +67,11 @@
     
 <!-- función dinámica de click -->
     <script>
-      let checkClick = (card_name, card_id) => {
-        memoGame.checkMatch(card_name,card_id)
-      }
+     
+            let checkClick = (cardName, Id) => {
+                memoGame.checkMatch(cardName, Id)
+            }
+        
     </script>
   </body>
 </html>
