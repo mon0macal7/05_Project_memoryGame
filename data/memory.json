@@ -1,0 +1,115 @@
+{
+  "memory_game": [
+    {
+      "card_id": "adyA",
+      "card_name": "adan",
+      "card_value": "2",
+      "card_image": "../assets/paintings/adan.png"
+    },
+
+    {
+      "card_id": "adyB",
+      "card_name": "adan",
+      "card_value": "2",
+      "card_image": "../assets/paintings/adan.png"
+    },
+
+    {
+      "card_id": "carryA",
+      "card_name": "drilo",
+      "card_value": "2",
+      "card_image": "../assets/paintings/Carrington.png"
+    },
+
+    {
+      "card_id": "carryB",
+      "card_name": "drilo",
+      "card_value": "2",
+      "card_image": "../assets/paintings/Carrington.png"
+    },
+
+    {
+      "card_id": "cloudA",
+      "card_name": "nube",
+      "card_value": "2",
+      "card_image": "../assets/paintings/clouds.png"
+    },
+
+    {
+      "card_id": "cloudB",
+      "card_name": "nube",
+      "card_value": "2",
+      "card_image": "../assets/paintings/clouds.png"
+    },
+
+    {
+      "card_id": "franceA",
+      "card_name": "liberty",
+      "card_value": "2",
+      "card_image": "../assets/paintings/delacroix.png"
+    },
+
+    {
+      "card_id": "franceB",
+      "card_name": "liberty",
+      "card_value": "2",
+      "card_image": "../assets/paintings/delacroix.png"
+    },
+
+    {
+      "card_id": "picA",
+      "card_name": "guernik",
+      "card_value": "2",
+      "card_image": "../assets/paintings/guernica.png"
+    },
+
+    {
+      "card_id": "picB",
+      "card_name": "guernik",
+      "card_value": "2",
+      "card_image": "../assets/paintings/guernica.png"
+    },
+
+    {
+      "card_id": "wasyA",
+      "card_name": "kandy",
+      "card_value": "2",
+      "card_image": "../assets/paintings/kandinsky.png"
+    },
+
+    {
+      "card_id": "wasyB",
+      "card_name": "kandy",
+      "card_value": "2",
+      "card_image": "../assets/paintings/kandinsky.png"
+    },
+
+    {
+      "card_id": "dinnerA",
+      "card_name": "vinci",
+      "card_value": "2",
+      "card_image": "../assets/paintings/lastdinner.png"
+    },
+
+    {
+      "card_id": "dinnerB",
+      "card_name": "vinci",
+      "card_value": "2",
+      "card_image": "../assets/paintings/lastdinner.png"
+    },
+
+    {
+      "card_id": "screamA",
+      "card_name": "munch",
+      "card_value": "2",
+      "card_image": "../assets/paintings/scream.png"
+    },
+
+    {
+      "card_id": "screamB",
+      "card_name": "munch",
+      "card_value": "2",
+      "card_image": "../assets/paintings/scream.png"
+    }
+  ]
+}

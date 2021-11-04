@@ -1,11 +1,12 @@
 //Exportar función para insertar imagen
 export let getPaintCards = () => {
-  getPaintCards;
+  alert("hola");
 };
+
 //traer data del .json local
-fetch(".vscode/data/memory.json")
+fetch("../data/memory.json")
   .then((response) => response.json())
-  .then((data) => iterarCards.json(data))
+  .then((data) => iterarCards(data))
   .catch((error) => console.log(error));
 
 //función para insertar tarjetas
@@ -16,14 +17,17 @@ let artCards = document.getElementById("memoCard");
 let iterarCards = (data) => {
   // iterar el objeto
   console.log(data.memory_game);
-  for (const card of data.memory_Game) {
+  for (const card of data.memory_game) {
     // iterar dinámicamente para entrar al objeto
-    console.log(card.name); // consologear la entrada al objeto
+    console.log(card.card_name); // entrada al objeto
+
+    //pintar cards dinámicamente
     artCards.innerHTML += `<div class="card-container">
-            <div class="card-portrait">
+            <div class="card-portrait" id= '${card.card_id}_flip' onclick="checkClick(${card.card_name}','${card.card_id})>
                 <div class="card-cover" id= "${card.card_name}"></div>
-                <div class="card-back">back: ${card.card_image}</div>
-            </div>
+                <div class="card-back"> <img class="paint" src= "${card.card_image}">
+                </div>
+              </div>
         </div>`;
   }
 };

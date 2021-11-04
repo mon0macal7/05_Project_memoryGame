@@ -36,7 +36,7 @@
     </aside1>
 
 <!-- En esta sección se ejecutará el juego -->
-    <main id="memoCard">cards section</main>
+    <main id="memoCard"></main>
     <div id="card-container"></div>
 
      <!-- aquí estará el nombre del user 2 y su puntuación -->
@@ -61,5 +61,12 @@
   </footer>
 
     <script src="index.js" type="module"></script>
+    
+<!-- función dinámica de click -->
+    <script>
+      let checkClick = (card_name, card_id) => {
+        memoGame.checkMatch(card_name,card_id)
+      }
+    </script>
   </body>
 </html>

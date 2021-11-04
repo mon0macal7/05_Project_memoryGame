@@ -29,7 +29,7 @@ main {
   background-color: #e2eb98;
   display: flex;
   flex-wrap: wrap;
-  gap: 1em 1em;
+
   color: rgb(46, 4, 26);
 }
 
@@ -47,13 +47,12 @@ footer {
   background-color: blueviolet;
   background-image: url(https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: cover;
-  opacity: 0.4;
+  padding-top: 1em;
 }
 
 /*  Memo transitions*/
 
 .card-container {
-  display: block;
   margin: auto;
   width: 15em;
   height: 10em;
@@ -69,6 +68,10 @@ footer {
   transform-style: preserve-3d;
 }
 
+.card-portrait:hover {
+  transform: rotateX(180deg);
+}
+
 .card-cover,
 .card-back {
   position: absolute;
@@ -82,23 +85,29 @@ footer {
   background-image: url(/assets/paintings/reverseCard.png);
   background-size: cover;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   border-radius: 7px;
   padding: 1.5em;
   text-align: center;
 }
 
 .card-back {
+  background-size: cover;
   width: 100%;
   height: 100%;
   border-radius: 10px;
   text-align: center;
   transform: rotateX(180deg);
+  border-radius: 7px;
 }
+
+.paint {
+  width: 100%;
+  height: 100%;
+}
+
 footer {
   font-size: 15px;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
 }
