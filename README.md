@@ -35,8 +35,8 @@ La mayoria de sus alumnos presento un estilo visual de aprendizaje y necesita un
 
 Se utiliza el método agile para distribuir las tareas del proyecto
 
-![Texto alternativo](.src/../assets/ora1.png)
-![Texto alternativo](.src/../assets/ora2.png)
+![Texto alternativo](.src/../assets/diagramas/KB_2week.png)
+![Texto alternativo](.src/../assets/diagramas/KB_2done.png)
 
 ---
 
@@ -51,7 +51,7 @@ Se utiliza el método agile para distribuir las tareas del proyecto
 
 ## _Diagrama de flujo_
 
-![Diagrama de flujo](.src/../assets/memoryGame.png)
+![Diagrama de flujo](.src/../assets/diagramas/memoryGame-2.png)
 
 ![Prototipo screen 1](.src/../assets/protoMain.png)
 ![Prototipo screen 2](.src/../assets/protoOne.png)

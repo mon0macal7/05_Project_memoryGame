@@ -5,7 +5,7 @@ body {
   width: auto;
   height: 100vh;
   grid-template-columns: 0.5fr 4fr 0.5fr;
-  grid-template-rows: 0.7fr 4fr 0.5fr;
+  grid-template-rows: 0fr 4fr 0.2fr;
   grid-template-areas: "header header header" "aside1 main aside2" "footer footer footer";
   background-color: #8c6399;
   column-gap: 1.5%;
@@ -21,7 +21,8 @@ header {
 
 aside1 {
   grid-area: aside1;
-  background-color: rgb(72, 72, 128);
+  background-color: #ab92bf;
+  opacity: 15%;
 }
 
 main {
@@ -29,31 +30,47 @@ main {
   background-color: #e2eb98;
   display: flex;
   flex-wrap: wrap;
-  gap: 1em 1em;
+
   color: rgb(46, 4, 26);
 }
 
 aside2 {
   grid-area: aside2;
-  background-color: rgb(46, 46, 139);
+  background-color: #ab92bf;
+  opacity: 15%;
 }
 
 footer {
   grid-area: footer;
-  background-color: darkgoldenrod;
+  color: #712f79;
+  text-align: center;
+  align-items: center;
+  background: #ba5370; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f4e2d8,
+    #ba5370
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f4e2d8,
+    #ba5370
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
+.contact {
+  font-size: 20px;
+  color: crimson;
+}
 #memoCard {
   background-color: blueviolet;
   background-image: url(https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: cover;
-  opacity: 0.4;
+  padding-top: 1em;
 }
 
 /*  Memo transitions*/
 
 .card-container {
-  display: block;
   margin: auto;
   width: 15em;
   height: 10em;
@@ -79,26 +96,32 @@ footer {
 }
 
 .card-cover {
-  background-image: url(/assets/paintings/reverseCard.png);
+  background-image: url(/assets/paintings/riverse.png);
   background-size: cover;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   border-radius: 7px;
   padding: 1.5em;
   text-align: center;
 }
 
 .card-back {
+  background-size: cover;
   width: 100%;
   height: 100%;
   border-radius: 10px;
   text-align: center;
   transform: rotateX(180deg);
+  border-radius: 7px;
 }
-footer {
+
+.paint {
+  width: 100%;
+  height: 100%;
+}
+
+/*footer {
   font-size: 15px;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: center;
-}
+  justify-content: space-around;
+}*/
