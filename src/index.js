@@ -12,7 +12,7 @@ let id2;
 let turn = true;
 let scoreP1 = 0;
 let scoreP2 = 0;
-document.getElementById("colorA").style.color = "#e36477";
+document.getElementById("colorA").style.color = "#5DD9C1";
 // declaramos función global scope
 window.memoGame = {
   testScope: (card_name) => {
@@ -69,16 +69,16 @@ window.memoGame = {
           scoreP1++;
           console.log(scoreP1);
           document.getElementById("scoreP1").innerHTML = scoreP1;
-          document.getElementById("colorA").style.color = "#fff";
-          document.getElementById("colorB").style.color = "#e36477";
+          document.getElementById("colorA").style.color = "#190933";
+          document.getElementById("colorB").style.color = "#5DD9C1";
         } else {
           console.log("turno player1");
           turn = true;
           scoreP2++;
           console.log(scoreP2);
           document.getElementById("scoreP2").innerHTML = scoreP2;
-          document.getElementById("colorA").style.color = "#e36477";
-          document.getElementById("colorB").style.color = "#fff";
+          document.getElementById("colorA").style.color = "#5DD9C1";
+          document.getElementById("colorB").style.color = "#190933";
         }
 
         //Aquí se puede hacer función para sonido
@@ -98,13 +98,13 @@ window.memoGame = {
         if (turn) {
           console.log("turno player2");
           turn = false;
-          document.getElementById("colorA").style.color = "#fff";
-          document.getElementById("colorB").style.color = "#e36477";
+          document.getElementById("colorA").style.color = "#190933";
+          document.getElementById("colorB").style.color = "#5DD9C1";
         } else {
           console.log("turno player1");
           turn = true;
           document.getElementById("colorA").style.color = "#e36477";
-          document.getElementById("colorB").style.color = "#fff";
+          document.getElementById("colorB").style.color = "#5DD9C1";
         }
       }
     }

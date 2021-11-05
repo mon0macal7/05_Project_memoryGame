@@ -22,7 +22,6 @@ header {
 aside1 {
   grid-area: aside1;
   background-color: #ab92bf;
-  opacity: 15%;
 }
 
 main {
@@ -37,7 +36,6 @@ main {
 aside2 {
   grid-area: aside2;
   background-color: #ab92bf;
-  opacity: 15%;
 }
 
 footer {
