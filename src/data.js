@@ -1,6 +1,6 @@
 //Exportar función para insertar imagen
 export let getPaintCards = () => {
-  alert("hola");
+  //alert("hola");
 };
 
 //traer data del .json local
