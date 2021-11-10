@@ -43,6 +43,7 @@ footer {
   color: #712f79;
   text-align: center;
   align-items: center;
+  justify-content: space-evenly;
   background: #ba5370; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -94,7 +95,7 @@ footer {
 }
 
 .card-cover {
-  background-image: url(/assets/paintings/riverse.png);
+  background-image: url(https://github.com/mon0macal7/05_Project_memoryGame/blob/development/assets/paintings/riverse.png);
   background-size: cover;
   width: 100%;
   border-radius: 7px;
