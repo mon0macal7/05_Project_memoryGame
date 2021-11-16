@@ -12,7 +12,13 @@ let id2;
 let turn = true;
 let scoreP1 = 0;
 let scoreP2 = 0;
+
 document.getElementById("colorA").style.color = "#5DD9C1";
+
+//Botón reset
+let reinicio = document.getElementById("reset");
+reinicio.addEventListener("click", getPaintCards);
+
 // declaramos función global scope
 window.memoGame = {
   testScope: (card_name) => {

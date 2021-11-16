@@ -1,17 +1,21 @@
+let artCards = document.getElementById("memoCard");
 //Exportar función para insertar imagen
 export let getPaintCards = () => {
-  //alert("hola");
+  alert("A JUGAR");
+  artCards.innerHTML = "";
+  let scoreP1 = 0;
+  let scoreP2 = 0;
+  document.getElementById("scoreP1").innerHTML = scoreP1;
+  document.getElementById("scoreP2").innerHTML = scoreP2;
+
+  //traer data del .json local
+  fetch("../data/memory.json")
+    .then((response) => response.json())
+    .then((data) => iterarCards(data))
+    .catch((error) => console.log(error));
 };
 
-//traer data del .json local
-fetch("../data/memory.json")
-  .then((response) => response.json())
-  .then((data) => iterarCards(data))
-  .catch((error) => console.log(error));
-
 //función para insertar tarjetas
-
-let artCards = document.getElementById("memoCard");
 
 // variable para el área de tarjetas
 let iterarCards = (data) => {
@@ -20,7 +24,8 @@ let iterarCards = (data) => {
   // iterar el objeto
   console.log(data.memory_game);
   //AQUI VA EL SORT para revolver cartas
-  //data.memory_game.sort(() => Math.random() - 0.5);
+  data.memory_game.sort(() => Math.random() - 0.5);
+
   for (const card of data.memory_game) {
     // iterar dinámicamente para entrar al objeto
     console.log(card.card_name); // entrada al objeto
