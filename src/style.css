@@ -21,7 +21,6 @@ header {
 
 aside1 {
   grid-area: aside1;
-  background-color: #ab92bf;
 }
 
 main {
@@ -35,7 +34,16 @@ main {
 
 aside2 {
   grid-area: aside2;
-  background-color: #ab92bf;
+}
+
+#colorA {
+  justify-content: center;
+  text-align: center;
+}
+
+#colorB {
+  justify-content: center;
+  text-align: center;
 }
 
 footer {
@@ -116,10 +124,3 @@ footer {
   width: 100%;
   height: 100%;
 }
-
-/*footer {
-  font-size: 15px;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: space-around;
-}*/

@@ -110,12 +110,6 @@
       "card_name": "munch",
       "card_value": "2",
       "card_image": "../assets/paintings/scream.png"
-    },
-    {
-      "card_id": "cover",
-      "card_name": "reverso",
-      "card_value": "",
-      "card_image": "../assets/paintings/riverse.png"
     }
   ]
 }
