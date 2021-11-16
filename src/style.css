@@ -15,12 +15,35 @@ body {
 
 header {
   grid-area: header;
-  background-color: #c3acce;
+  background-color: #6b0858;
   text-align: center;
+  height: 80px;
+  background-image: url("../assets/paintings/memLog.png");
+  background-repeat: no-repeat;
+  justify-items: center;
 }
 
 aside1 {
   grid-area: aside1;
+  background: #9d50bb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6e48aa,
+    #9d50bb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6e48aa,
+    #9d50bb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#scoreP1 {
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 15%;
+  font-family: monospace;
 }
 
 main {
@@ -34,43 +57,67 @@ main {
 
 aside2 {
   grid-area: aside2;
+  background: #9d50bb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6e48aa,
+    #9d50bb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6e48aa,
+    #9d50bb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#scoreP2 {
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  padding-block-end: 5%;
+  font-family: monospace;
+}
 #colorA {
   justify-content: center;
   text-align: center;
+  font-size: 20px;
+  padding-top: 15%;
+  font-family: monospace;
 }
 
 #colorB {
   justify-content: center;
   text-align: center;
+  font-size: 20px;
+  padding-top: 15%;
+  font-family: monospace;
 }
 
 footer {
   grid-area: footer;
-  color: #712f79;
+  color: #f8d4fc;
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
-  background: #ba5370; /* fallback for old browsers */
+  background: #9d50bb; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #f4e2d8,
-    #ba5370
+    #6e48aa,
+    #9d50bb
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #f4e2d8,
-    #ba5370
+    #6e48aa,
+    #9d50bb
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .contact {
   font-size: 20px;
-  color: crimson;
+  color: rgb(250, 246, 247);
 }
 #memoCard {
-  background-color: blueviolet;
-  background-image: url(https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-color: rgb(123, 79, 165);
+  background-image: url("https://2.bp.blogspot.com/-q00TlzRAO4s/VyJ88u3ogvI/AAAAAAAAANY/U2m47OvfMT8jdpyB0ny6KGp8DiR7YDJfQCLcB/s1600/BeFunky%2BCollage.jpg");
   background-size: cover;
   padding-top: 1em;
 }
@@ -123,4 +170,10 @@ footer {
 .paint {
   width: 100%;
   height: 100%;
+}
+
+.btn {
+  font-size: 18px;
+  background-color: #6b0858;
+  border-radius: 15px;
 }
