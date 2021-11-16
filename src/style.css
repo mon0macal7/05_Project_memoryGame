@@ -1,6 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Yusei+Magic&display=swap");
 
 body {
+  background: #ad5389; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3c1053,
+    #ad5389
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3c1053,
+    #ad5389
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#mainPage {
   display: grid;
   width: auto;
   height: 100vh;
@@ -11,6 +24,15 @@ body {
   column-gap: 1.5%;
   row-gap: 0.3%;
   font-family: "Yusei Magic", sans-serif;
+}
+
+#screenOne {
+  display: block;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  margin-top: 20%;
+  width: 40%;
 }
 
 header {
