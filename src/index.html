@@ -26,71 +26,69 @@
   </head>
 
   <body>
-    <header>
-      <h1>Memory ARTest</h1>
-    </header>
-    <nav></nav>
+    <!-- Inicia pantalla de bienvenida 
+
+    <section id="screenOne">
+      <div class="input-group">
+        <span class="input-group-text">Player One</span>
+        <input type="text" aria-label="First name" class="form-control" />
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-text">Player Two</span>
+        <input type="text" aria-label="First name" class="form-control" />
+      </div>
+
+      <button id="play" type="button" class="btn btn-outline-dark">PLAY</button>
+    </section>
+-->
+
+    <!-- Inicia página principal -->
+
+    <header></header>
+
     <!-- aquí estará el nombre del user 1 y su puntuación -->
     <aside1>
-      <p id="colorA">Jugador 1</p>
+      <p id="colorA">Player One</p>
       <p id="scoreP1">0</p>
-      <form class="form-floating">
-        <input
-          type="user"
-          class="form-control"
-          id="floatingInputValue"
-          placeholder="Introduce tu nombre"
-          value="userName"
-        />
-        <label for="floatingInputValue">userName</label>
-      </form>
     </aside1>
 
     <!-- En esta sección se ejecutará el juego -->
     <main id="memoCard"></main>
     <div id="card-container"></div>
 
-    <!-- aquí estará el nombre del user 2 y su puntuación -->
+    <!-- Aquí estará el nombre del user 2 y su puntuación -->
     <aside2>
-      <p id="colorB">Jugador 2</p>
+      <p id="colorB">Player Two</p>
       <p id="scoreP2">0</p>
-      <form class="form-floating">
-        <input
-          type="user"
-          class="form-control"
-          id="floatingInputValue"
-          placeholder="Introduce tu nombre"
-          value="userName"
-        />
-        <label for="floatingInputValue">userName</label>
-      </form>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Reset</button>
+      </div>
     </aside2>
 
     <!-- Inicia footer -->
     <footer>
-      <span id="Contact">
-        <h2 class="contact">Contact</h2>
-        <p>You can find me on:</p>
-        <a
-          href="https://github.com/mon0macal7"
-          id="profile-link"
-          target="_blank"
-          class="btn"
-          >GitHub <i class="fab fa-github"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/m%C3%B3nica-macal-b35989140/"
-          target="_blank"
-          class="btn"
-          >Linkedin <i class="fab fa-linkedin"></i
-        ></a>
-        <br />
-        © Copyright 2021-Proyecto #5 at Ajusco Bootcamp "Memory ARTest" by
-        Mónica Macal Hernández
-      </span>
+      <h2 class="contact">You can find me on:</h2>
+      <a
+        href="https://github.com/mon0macal7"
+        id="profile-link"
+        target="_blank"
+        class="btn"
+        >GitHub <i class="fab fa-github"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/m%C3%B3nica-macal-b35989140/"
+        target="_blank"
+        class="btn"
+        >Linkedin <i class="fab fa-linkedin"></i
+      ></a>
+      <br />
+      © Copyright 2021-Proyecto #5 at Ajusco Bootcamp "Memory ARTest" by Mónica
+      Macal Hernández
     </footer>
 
     <script src="index.js" type="module"></script>
+    <script src="app.js"></script>
 
     <!-- función dinámica de click -->
     <script>
