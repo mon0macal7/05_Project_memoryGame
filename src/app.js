@@ -11,11 +11,12 @@ jugar.addEventListener("click", () => {
   document.getElementById("mainPage").hidden = false;
 });
 
-//funcion pintar nombres de jugadores de screen one a main screen
-let jugadorUno = document.getElementById("name1");
-jugadorUno.innerHTML = "player1" + document.getElementById("name1").value + ":";
-let jugadorDos = document.getElementById("name2");
-jugadorDos.innerHTML = "player2" + document.getElementById("name2").value + ":";
+//funcion pintar nombres de jugadores de scree one a main screen
+let jugadorUno = document.getElementById("colorA");
+jugadorUno.innerHTML = document.getElementById("name1").value + " ";
+let jugadorDos = document.getElementById("colorB");
+jugadorDos.innerHTML =
+  "player2" + "<br>" + document.getElementById("name2").value + " ";
 
 //traer tarjetas y darles visibilidad
 /*const reinicio = document.querySelecctorAll("card-portrait");
