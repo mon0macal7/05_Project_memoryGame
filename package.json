@@ -1,0 +1,25 @@
+{
+  "name": "05_project_memorygame-1",
+  "version": "1.0.0",
+  "description": "memoryGame with JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mon0macal7/05_Project_memoryGame.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "Mónica Macal Hernández",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mon0macal7/05_Project_memoryGame/issues"
+  },
+  "homepage": "https://github.com/mon0macal7/05_Project_memoryGame#readme",
+  "devDependencies": {
+    "eslint": "^8.1.0"
+  }
+}
