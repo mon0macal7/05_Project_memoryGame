@@ -13,6 +13,18 @@ body {
     #ad5389
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+/* Estructura screen 1*/
+#screenOne {
+  display: block;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  margin-top: 20%;
+  width: 40%;
+}
+
+/* Estructura de screen 2 */
 #mainPage {
   display: grid;
   width: auto;
@@ -26,15 +38,7 @@ body {
   font-family: "Yusei Magic", sans-serif;
 }
 
-#screenOne {
-  display: block;
-  margin: auto;
-  text-align: center;
-  position: relative;
-  margin-top: 20%;
-  width: 40%;
-}
-
+/*Encabezado */
 header {
   grid-area: header;
   background-color: #6b0858;
@@ -44,7 +48,7 @@ header {
   background-repeat: no-repeat;
   justify-items: center;
 }
-
+/* seccion player one  */
 aside1 {
   grid-area: aside1;
   background: #9d50bb; /* fallback for old browsers */
@@ -59,7 +63,7 @@ aside1 {
     #9d50bb
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
+/* puntuacion jugador 1*/
 #scoreP1 {
   justify-content: center;
   text-align: center;
@@ -67,7 +71,7 @@ aside1 {
   padding-top: 15%;
   font-family: monospace;
 }
-
+/* estilo tablero principal */
 main {
   grid-area: main;
   background-color: #e2eb98;
@@ -76,7 +80,7 @@ main {
 
   color: rgb(46, 4, 26);
 }
-
+/*seccion player 2 */
 aside2 {
   grid-area: aside2;
   background: #9d50bb; /* fallback for old browsers */
@@ -91,7 +95,7 @@ aside2 {
     #9d50bb
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
+/*puntuacion jugador 2 */
 #scoreP2 {
   justify-content: center;
   text-align: center;
@@ -99,6 +103,8 @@ aside2 {
   padding-block-end: 5%;
   font-family: monospace;
 }
+
+/* name player one */
 #colorA {
   justify-content: center;
   text-align: center;
@@ -106,7 +112,7 @@ aside2 {
   padding-top: 15%;
   font-family: monospace;
 }
-
+/* name player two*/
 #colorB {
   justify-content: center;
   text-align: center;
@@ -114,7 +120,7 @@ aside2 {
   padding-top: 15%;
   font-family: monospace;
 }
-
+/* Pie de pagina */
 footer {
   grid-area: footer;
   color: #f8d4fc;
@@ -132,11 +138,15 @@ footer {
     #6e48aa,
     #9d50bb
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* contacto */
 }
 .contact {
   font-size: 20px;
   color: rgb(250, 246, 247);
 }
+
+/*collage */
 #memoCard {
   background-color: rgb(123, 79, 165);
   background-image: url("https://2.bp.blogspot.com/-q00TlzRAO4s/VyJ88u3ogvI/AAAAAAAAANY/U2m47OvfMT8jdpyB0ny6KGp8DiR7YDJfQCLcB/s1600/BeFunky%2BCollage.jpg");
@@ -154,6 +164,8 @@ footer {
   perspective: 1000px;
 }
 
+/*tarjetas*/
+
 .card-portrait {
   position: relative;
   width: 100%;
@@ -161,6 +173,8 @@ footer {
   transition: transform 1s;
   transform-style: preserve-3d;
 }
+
+/* tarjeta fija*/
 
 .card-cover,
 .card-back {
@@ -170,6 +184,7 @@ footer {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
+/*cubierta tarjeta*/
 .card-cover {
   background-image: url("https://raw.githubusercontent.com/mon0macal7/05_Project_memoryGame/development/assets/paintings/riverse.png");
   background-size: cover;
@@ -178,7 +193,7 @@ footer {
   padding: 1.5em;
   text-align: center;
 }
-
+/*card back */
 .card-back {
   background-size: cover;
   width: 100%;
@@ -188,14 +203,19 @@ footer {
   transform: rotateX(180deg);
   border-radius: 7px;
 }
-
+/* paint*/
 .paint {
   width: 100%;
   height: 100%;
 }
-
+/* boton*/
 .btn {
   font-size: 18px;
   background-color: #6b0858;
   border-radius: 15px;
+}
+/* background button*/
+.btn-outline-dark {
+  color: #f6f7f9;
+  border-color: #a2c0dd;
 }
