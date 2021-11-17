@@ -1,4 +1,5 @@
 let artCards = document.getElementById("memoCard");
+
 //Exportar función para insertar imagen
 export let getPaintCards = () => {
   alert("A JUGAR");
@@ -7,6 +8,7 @@ export let getPaintCards = () => {
   let scoreP2 = 0;
   document.getElementById("scoreP1").innerHTML = scoreP1;
   document.getElementById("scoreP2").innerHTML = scoreP2;
+  // limpiar los puntajes de los jugadores
 
   //traer data del .json local
   fetch("../data/memory.json")

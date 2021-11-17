@@ -12,6 +12,7 @@ jugar.addEventListener("click", () => {
   document.getElementById("screenOne").hidden = true;
   document.getElementById("mainPage").hidden = false;
   document.getElementById("GOT").play();
+
   let jugadorUno = document.getElementById("colorA");
   jugadorUno.innerHTML =
     "Player1" + "<br>" + document.getElementById("name1").value + " ";
@@ -19,6 +20,10 @@ jugar.addEventListener("click", () => {
   jugadorDos.innerHTML =
     "Player2" + "<br>" + document.getElementById("name2").value + " ";
 });
+
+//Botón reset
+/*let reinicio = document.getElementById("reset");
+reinicio.addEventListener("click", getPaintCards);*/
 
 //y debe terminar cuando ya no haya cards en el tablero
 

@@ -2,7 +2,7 @@
 import { getPaintCards } from "./data.js";
 getPaintCards();
 
-//pseudocodigo de machine card
+//pseudocódigo de machine card
 // definimos variables para guardar las acciones de las cards
 let click = false; //boleano
 let carta1;
@@ -14,10 +14,6 @@ let scoreP1 = 0;
 let scoreP2 = 0;
 
 document.getElementById("colorA").style.color = "#5DD9C1";
-
-//Botón reset
-let reinicio = document.getElementById("reset");
-reinicio.addEventListener("click", getPaintCards);
 
 // declaramos función global scope
 window.memoGame = {
@@ -53,7 +49,7 @@ window.memoGame = {
       //alert("segundo click a: " + carta2 + " " + id2);
       click = false;
       if (carta1 == carta2 && id1 != id2) {
-        //match en el mismo nombre pero con diferente id
+        correcta(); //match en el mismo nombre pero con diferente id
         // comparar si la carta1 == carta2 es un match
         //alert("es un match");
         //agregar time set out
@@ -91,6 +87,7 @@ window.memoGame = {
       } else {
         //alert("no es match")
         //agregar set time out
+        invalidAnswer();
         setTimeout(() => {
           cardFlip.style.transform = ""; //volver carta1
           let cardFlip1 = document.getElementById(id1 + "_flip");
@@ -116,3 +113,18 @@ window.memoGame = {
     }
   },
 };
+
+let correcta = () => {
+  const right = document.getElementById("valid");
+  right.play();
+};
+
+let invalidAnswer = () => {
+  const wrong = document.getElementById("invalid");
+  wrong.play();
+};
+
+/*
+let winner = document.getElementById("ganador");
+winner.addEventListener("click", () => {
+});*/
