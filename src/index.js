@@ -32,3 +32,11 @@ jugar.addEventListener("click", () => {
   document.getElementById("scoreP1").innerHTML = 0;
   document.getElementById("scoreP2").innerHTML = 0;
 });
+
+//boton volver a screen one
+let backScreen1 = document.getElementById("inicio");
+
+backScreen1.addEventListener("click", () => {
+  location.reload();
+});
+backScreen1();

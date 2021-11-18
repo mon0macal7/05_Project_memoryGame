@@ -24,7 +24,7 @@ let iterarCards = (data) => {
   // iterar el objeto
   console.log(data.memory_game);
   //AQUI VA EL SORT para revolver cartas
-  /*data.memory_game.sort(() => Math.random() - 0.5);*/
+  data.memory_game.sort(() => Math.random() - 0.5);
 
   for (const card of data.memory_game) {
     // iterar dinámicamente para entrar al objeto
