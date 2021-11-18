@@ -21,7 +21,6 @@ jugar.addEventListener("click", () => {
   document.getElementById("mainPage").hidden = false;
   let musicFondo = document.getElementById("GOT");
   musicFondo.volume = 0.2;
-  musicFondo.loop = true;
   musicFondo.play();
 
   let jugadorUno = document.getElementById("colorA");
