@@ -29,32 +29,83 @@
     <!--   Inicia pantalla de bienvenida  -->
 
     <section id="screenOne">
-      <div class="input-group">
-        <span class="input-group-text">Player One</span>
-        <input
-          id="name1"
-          type="text"
-          aria-label="First name"
-          class="form-control"
-        />
+      <img id="log" src="../assets/paintings/memLog.png" alt="logo" />
+      <div id="inputs">
+        <div class="input-group">
+          <span class="input-group-text">Player One</span>
+          <input
+            id="name1"
+            type="text"
+            aria-label="First name"
+            class="form-control"
+          />
+        </div>
+
+        <br />
+
+        <div class="input-group">
+          <span class="input-group-text">Player Two</span>
+          <input
+            id="name2"
+            type="text"
+            aria-label="First name"
+            class="form-control"
+          />
+        </div>
+
+        <br />
+
+        <button id="play" type="button" class="btn btn-outline-dark">
+          PLAY
+        </button>
+
+        <br />
       </div>
 
-      <br />
-
-      <div class="input-group">
-        <span class="input-group-text">Player Two</span>
-        <input
-          id="name2"
-          type="text"
-          aria-label="First name"
-          class="form-control"
-        />
-      </div>
-
-      <br />
-
-      <button id="play" type="button" class="btn btn-outline-dark">PLAY</button>
+      <footer class="pie">
+        <h2 class="contact">You can find me on:</h2>
+        <a
+          href="https://github.com/mon0macal7"
+          id="profile-link"
+          target="_blank"
+          class="btn"
+          >GitHub <i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/m%C3%B3nica-macal-b35989140/"
+          target="_blank"
+          class="btn"
+          >Linkedin <i class="fab fa-linkedin"></i
+        ></a>
+        <br />
+        © Copyright 2021-Proyecto #5 at Ajusco Bootcamp "Memory ARTest" by
+        Mónica Macal Hernández
+      </footer>
     </section>
+
+    <audio
+      id="GOT"
+      src="../assets/sounds/game-thrones-acustico.mp3"
+      type="audio/mp3"
+    ></audio>
+
+    <audio
+      id="valid"
+      src="../assets/sounds/correct-ding.mp3"
+      type="audio/mp3"
+    ></audio>
+
+    <audio
+      id="invalid"
+      src="../assets/sounds/correct-buzzer.mp3"
+      type="audio/mp3"
+    ></audio>
+
+    <audio
+      id="ganador"
+      src="../assets/sounds/bites-ta-da-winner.mp3"
+      type="audio/mp3"
+    ></audio>
 
     <!-- Inicia página principal -->
 
