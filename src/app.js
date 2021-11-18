@@ -1,9 +1,3 @@
-//y debe terminar cuando ya no haya cards en el tablero
-
-//traer tarjetas y darles visibilidad
-/*const reinicio = document.querySelecctorAll("card-portrait");
-reinicio.visibility = "";*/
-
 //app.js
 
 //pseudocódigo de machine card
@@ -123,22 +117,25 @@ window.memoGame = {
     }
   },
 };
-
+// funciones para agregar sonidos al juego
+//match
 let correcta = () => {
   const right = document.getElementById("valid");
   right.play();
 };
-
+// no match
 let invalidAnswer = () => {
   const wrong = document.getElementById("invalid");
-  wrong.volume = 0.1;
+  wrong.volume = 1;
   wrong.play();
 };
-
+//sonido para ganador
 let winner = () => {
   const win = document.getElementById("ganador");
   win.play();
 };
+
+//
 /*
 let winner = document.getElementById("ganador");
 winner.addEventListener("click", () => {
